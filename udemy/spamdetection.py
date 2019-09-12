@@ -17,3 +17,9 @@ Ytest = Y[-100:,]
 modelNB = MultinomialNB()
 modelNB.fit(Xtrain, Ytrain)
 print("NB score:", modelNB.score(Xtest, Ytest))
+
+
+modelAB = AdaBoostClassifier()
+modelAB.fit(Xtrain, Ytrain)
+
+print("AdaBoost score:", modelAB.score(Xtest, Ytest))
